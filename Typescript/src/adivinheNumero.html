@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivinhe o número</title>
+</head>
+<body>
+  <div>
+    <button class="dificuldade" onclick="iniciar(1)">Fácil</button>
+    <button class="dificuldade" onclick="iniciar(2)">Médio</button>
+    <button class="dificuldade" onclick="iniciar(3)">Difícil</button>
+  </div>
+
+  
+  <div>
+    <p>Tentativas: <span id="spanTentativas">0</span></p>
+    <input type="number" id="inputPalpite" min="0" max="10">
+    <button id="botaoEnviar">Enviar</button>
+  </div>
+
+  <script src="adivinheNumero.js"></script>
+</body>
+</html>

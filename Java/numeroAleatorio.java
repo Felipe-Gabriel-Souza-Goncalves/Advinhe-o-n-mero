@@ -46,7 +46,7 @@ public class numeroAleatorio {
                     System.out.println("Digite seu palpite ou 'tentativa' para mostrar todos os seus palpites");
                     System.out.println("Tentativa " + tentativas );
                     String input = ler.nextLine();
-                    System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                    // System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
                     if(input.equals("tentativa")){
                         // for(int i = 0; i < arrayPalpites.size(); i++){
