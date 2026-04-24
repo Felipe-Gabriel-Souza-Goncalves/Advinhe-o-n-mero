@@ -4,21 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adivinhe o número</title>
+
+  <style>
+        *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      min-height: 100vh;
+    }
+
+    header, footer, main{
+      width: 100%;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    header{
+      border-bottom: 1px solid lightgray;
+    }
+
+    main{
+      padding: 48px 24px;
+      justify-content: center;
+    }
+    
+
+    footer{
+      margin-top: auto;
+      border-top: 1px solid lightgray;
+    }
+
+    footer > div{
+      padding: 12px 8px;
+      width: 25%;
+      min-width: 125px;
+    }
+  </style>
 </head>
 <body>
-  <div>
-    <button class="dificuldade" onclick="iniciar(1)">Fácil</button>
-    <button class="dificuldade" onclick="iniciar(2)">Médio</button>
-    <button class="dificuldade" onclick="iniciar(3)">Difícil</button>
-  </div>
+   <header>
+    <h1>Adivinhe o número! <span style="font-size: 10px">(Typescript)</span></h1>
+  </header>
 
+  <main>
+    <div>
+      <div id="containerDificuldade">
+        <button class="dificuldade">Fácil</button>
+        <button class="dificuldade">Médio</button>
+        <button class="dificuldade">Difícil</button>
+      </div>
+      
+      <div id="containerControles">
+        <p>Tentativas: <span id="spanTentativas">0</span></p>
+        <p id="statusTentativa"></p>
+      
+        <input type="number" id="inputPalpite" min="0" max="10">
+        <button id="botaoEnviar">Enviar</button>
+      </div>
+      
+      
+    </div>
+  </main>
+
+<footer>
+    <div>
+      <p>Github</p>
+      <a rel="noopener noreferrer" href="https://github.com/Felipe-Gabriel-Souza-Goncalves">Pessoal</a> <br>
+      <a rel="noopener noreferrer" href="https://github.com/FelipeGSG">Educacional</a>
+    </div>
+
+    <div>
+      <a rel="noopener noreferrer" href="https://portifolio-fg.vercel.app/">Retornar para o portifólio</a> <br>
+      <a rel="noopener noreferrer" href="https://github.com/Felipe-Gabriel-Souza-Goncalves/Adivinhe-o-n-mero">Ir para o repositório</a>
+    </div>
+
+    <div>
+      <p>Visite também:</p>
+      <span>Hospedados:</span>
+
+      <p>
+        Acesse a versão em 
+        <a rel="noopener noreferrer" href="https://felipe-gabriel-souza-goncalves.github.io/Adivinhe-o-n-mero/HTML_JS/index.html">JavaScript</a>
+      </p>
+      <p>
+        Acesse a versão em 
+        <a rel="noopener noreferrer" href="https://colab.research.google.com/drive/1YqWPL3ykQ0OEboGSs7sVi6Yxei7eY3cI?usp=sharing">Python (Google Collab)</a>
+      </p>
+
+      <span>Ambiente local:</span>
+      <p>Veja o código da versão <a rel="noopener noreferrer" href="https://github.com/Felipe-Gabriel-Souza-Goncalves/Adivinhe-o-n-mero/tree/main/Java">Java</a></p>
+
+    </div>
+  </footer>
   
-  <div>
-    <p>Tentativas: <span id="spanTentativas">0</span></p>
-    <input type="number" id="inputPalpite" min="0" max="10">
-    <button id="botaoEnviar">Enviar</button>
-  </div>
-
   <script src="adivinheNumero.js"></script>
 </body>
 </html>
