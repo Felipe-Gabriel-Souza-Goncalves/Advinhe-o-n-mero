@@ -1,0 +1,49 @@
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      min-height: 100vh;
+    }
+
+    header, footer, main{
+      width: 100%;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    header{
+      border-bottom: 1px solid lightgray;
+    }
+
+    main{
+      padding: 48px 24px;
+      justify-content: center;
+    }
+    
+    main > div > div{
+      display: flex;
+      justify-content: space-around;
+      gap: 24px;
+      padding: 12px;
+    }
+
+    main > p{
+      display: block;
+    }
+
+    footer{
+      margin-top: auto;
+      border-top: 1px solid lightgray;
+    }
+
+    footer > div{
+      padding: 12px 8px;
+      width: 25%;
+      min-width: 125px;
+    }
